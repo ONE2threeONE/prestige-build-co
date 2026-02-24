@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Prestige Build Co.</title>
+  <meta name="description" content="View our portfolio of luxury custom homes, additions, and renovations across Arizona." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .portfolio-card .media-ph { aspect-ratio: 4/3; }
+    .video-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,68,0.3);
+      padding: 4px 10px;
+      border-radius: 2px;
+      margin-top: 12px;
+    }
+    .filter-bar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+    .filter-btn {
+      padding: 9px 22px;
+      border-radius: 4px;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid rgba(255,255,255,0.12);
+      background: transparent;
+      color: var(--gray-400);
+      transition: all 0.2s;
+      font-family: var(--font);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    @media (max-width: 900px) {
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
+      .pegasus-featured { grid-template-columns: 1fr !important; }
+      .pegasus-featured .media-ph { min-height: 260px !important; }
+    }
+    @media (max-width: 600px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Prestige Build Co.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">Completed Projects</p>
+      <h1>Built with Purpose.<br><span class="gold">Every One.</span></h1>
+      <p>Prestige Build Co. is a boutique builder. We take on a limited number of projects so that every home receives Matthew's direct, personal attention from first meeting to final delivery.</p>
+    </div>
+  </div>
+
+  <!-- SIGNATURE PROJECT: PEGASUS AIRPARK -->
+  <div class="section" style="padding-bottom:0;">
+    <div class="section-inner">
+      <div class="fade-in" style="margin-bottom:40px;">
+        <p class="section-label">Signature Project</p>
+        <h2 class="section-title">Pegasus Airpark<br><span class="gold">Queen Creek, AZ</span></h2>
+        <p style="color:var(--gray-400); font-size:1rem; line-height:1.8; max-width:620px; font-weight:300;">Pegasus Airpark is one of Arizona's most exclusive private fly-in communities — a neighborhood where homes have direct taxiway access and residents park their aircraft steps from their front door. Building here demands precision, attention to aviation-specific requirements, and an understanding of a clientele that holds their home to an extraordinarily high standard.</p>
+      </div>
+
+      <!-- Full-width featured card -->
+      <div class="fade-in" style="background:var(--black-card); border:1px solid rgba(201,168,68,0.2); border-radius:14px; overflow:hidden; position:relative;">
+        <div style="position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent, var(--gold), transparent);"></div>
+
+        <div class="pegasus-featured" style="display:grid; grid-template-columns:1fr 1fr; min-height:380px;">
+          <!-- INSERT PHOTO: Pegasus Airpark — 1200×800px recommended -->
+          <div class="media-ph" style="border:none; border-radius:0; min-height:380px;">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            Insert Photo — Pegasus Airpark Residence<br>
+            <span style="font-size:0.62rem; opacity:0.5;">Recommended: 1200×800px</span>
+          </div>
+
+          <div style="padding:52px 48px; display:flex; flex-direction:column; justify-content:center;">
+            <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(201,168,68,0.08); border:1px solid rgba(201,168,68,0.2); border-radius:2px; padding:6px 14px; margin-bottom:28px; width:fit-content;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              <span style="font-size:0.68rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); font-weight:600;">Private Fly-In Community</span>
+            </div>
+
+            <p style="font-size:0.75rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gray-600); font-weight:600; margin-bottom:12px;">Custom Residence · Queen Creek, AZ</p>
+            <h3 style="font-family:var(--font-serif); font-size:1.9rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:20px; line-height:1.1;"><!-- INSERT: Project name --></h3>
+            <p style="color:var(--gray-400); font-size:0.93rem; line-height:1.8; font-weight:300; margin-bottom:32px;"><!-- INSERT: sq ft, architectural style, key features. --> Built to the unique demands of Pegasus Airpark — where hangar integration, premium finishes, and flawless craftsmanship are not optional.</p>
+
+            <div style="display:flex; flex-direction:column; gap:12px;">
+              <div style="display:flex; gap:12px; align-items:center;">
+                <div style="width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0;"></div>
+                <span style="font-size:0.85rem; color:var(--gray-300);"><!-- INSERT sq ft --> · <!-- INSERT style --></span>
+              </div>
+              <div style="display:flex; gap:12px; align-items:center;">
+                <div style="width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0;"></div>
+                <span style="font-size:0.85rem; color:var(--gray-300);">Direct taxiway access · Integrated hangar</span>
+              </div>
+              <div style="display:flex; gap:12px; align-items:center;">
+                <div style="width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0;"></div>
+                <span style="font-size:0.85rem; color:var(--gray-300);"><!-- INSERT: one more notable feature --></span>
+              </div>
+            </div>
+
+            <!-- INSERT VIDEO LINK (optional):
+            <div class="video-badge" style="margin-top:28px;">▶ Watch Build Video</div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO GRID -->
+  <div class="section">
+    <div class="section-inner">
+
+      <div class="portfolio-grid stagger" style="grid-template-columns: repeat(3,1fr);">
+
+        <!-- Project 1: Gilbert -->
+        <div class="card portfolio-card fade-in">
+          <!-- INSERT PHOTO: Gilbert Residence — 1200×900px -->
+          <div class="media-ph">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+            Insert Photo — Gilbert Residence
+          </div>
+          <div class="card-body">
+            <p class="card-label">Custom Home · Gilbert, AZ</p>
+            <h3 class="card-title"><!-- INSERT: Project name or street --></h3>
+            <p class="card-desc"><!-- INSERT: sq ft, style, key features of the Gilbert build. --></p>
+            <!-- INSERT VIDEO LINK (optional): <div class="video-badge">▶ Watch Build Video</div> -->
+          </div>
+        </div>
+
+        <!-- Placeholder removed — Pegasus featured above -->
+
+        <!-- Now Accepting -->
+        <div class="card portfolio-card fade-in" style="border-color:rgba(201,168,68,0.2); background:linear-gradient(135deg, rgba(201,168,68,0.04), transparent);">
+          <div class="media-ph" style="border-color:rgba(201,168,68,0.2);">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity="0.6"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <div class="card-body">
+            <p class="card-label" style="color:var(--gold);">Now Accepting · 2026</p>
+            <h3 class="card-title">Your Home Could Be Next</h3>
+            <p class="card-desc" style="margin-bottom:20px;">We are currently accepting consultations for new builds. Build slots are limited — Matthew works on a select number of projects at a time to ensure every client receives his full attention.</p>
+            <a href="contact.html" class="btn btn-outline" style="font-size:0.75rem; padding:10px 22px;">Schedule a Consultation</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- VIDEO SHOWCASE — add when build documentation is available -->
+      <!--
+      <div class="fade-in" style="margin-top: 80px;">
+        <p class="section-label">Build Documentation</p>
+        <h2 class="section-title" style="margin-bottom: 16px;">Watch Us Build</h2>
+        <p class="section-sub">Time-lapse footage, walkthroughs, and client testimonial videos.</p>
+        <div class="grid-2">
+          <div class="media-ph" style="aspect-ratio:16/9; border-radius:12px;">
+            INSERT Build Video 1 — MP4 or YouTube/Vimeo embed
+          </div>
+          <div class="media-ph" style="aspect-ratio:16/9; border-radius:12px;">
+            INSERT Build Video 2 — MP4 or YouTube/Vimeo embed
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section fade-in">
+    <p class="section-label">Start Your Project</p>
+    <h2>Your Home Could Be<br><span class="gold">Our Next Masterpiece</span></h2>
+    <p>Let's discuss your vision and what's possible on your land and within your budget.</p>
+    <a href="contact.html" class="btn btn-gold">Schedule a Consultation</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Prestige Build Co.</div>
+        <p class="footer-desc">Arizona's premier luxury residential contractor. Crafting bespoke homes with precision, integrity, and artistry.</p>
+        <p class="footer-roc">ROC #360344 · General Residential B · Licensed, Bonded &amp; Insured<br>Licensee at: Realty ONE Group · License Number: SA634367000</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Builder Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Custom Homes</a></li>
+          <li><a href="services.html">Design-Build</a></li>
+          <li><a href="services.html">Home Additions</a></li>
+          <li><a href="services.html">Luxury Renovations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6025737414">602-573-7414</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html">Schedule a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prestige Build Co. All rights reserved.</span>
+      <span>ROC #360344 · General Residential B · State of Arizona</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Prestige Build Co.</title>
+  <meta name="description" content="Contact Prestige Build Co. to discuss your luxury home project. Call 602-573-7414 or fill out our consultation request form." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Prestige Build Co.</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-label">Let's Build Together</p>
+      <h1>Your Vision.<br>Our <span class="gold">Craftsmanship.</span></h1>
+      <p>Tell us about your project. We respond to every inquiry personally — usually within one business day.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT CONTENT -->
+  <div class="section">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- FORM -->
+        <div class="fade-in">
+          <div class="gold-line"></div>
+          <h2 class="section-title" style="margin-bottom:12px;">Request a Consultation</h2>
+          <p style="color:var(--gray-400); font-size:0.95rem; line-height:1.75; margin-bottom:40px;">Fill out the form below and a member of our team will be in touch to discuss your project and schedule a time to meet.</p>
+
+          <form id="contactForm">
+            <div class="grid-2" style="gap:20px;">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="602-555-0100" />
+            </div>
+
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType">
+                <option value="" disabled selected>Select a project type</option>
+                <option>Custom Home — New Construction</option>
+                <option>Design-Build</option>
+                <option>Home Addition</option>
+                <option>Luxury Renovation</option>
+                <option>Pre-Construction Consulting</option>
+                <option>Other / Not Sure Yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Estimated Budget</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Select a range</option>
+                <option>Under $500,000</option>
+                <option>$500,000 – $1,000,000</option>
+                <option>$1,000,000 – $2,000,000</option>
+                <option>$2,000,000 – $5,000,000</option>
+                <option>$5,000,000+</option>
+                <option>Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" placeholder="Describe your vision, timeline, location, and anything else you'd like us to know…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width:100%; text-align:center; padding:16px;">
+              Send Message
+            </button>
+
+            <p style="margin-top:16px; font-size:0.78rem; color:var(--gray-600); text-align:center;">
+              <!-- TODO: Wire to Formspree, Netlify Forms, or your preferred form handler -->
+              By submitting, you agree to be contacted by Prestige Build Co. regarding your inquiry.
+            </p>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO CARD -->
+        <div class="fade-in">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+
+            <div class="info-row">
+              <p class="info-label">Phone</p>
+              <p class="info-value"><a href="tel:6025737414">602-573-7414</a></p>
+            </div>
+
+            <div class="info-row">
+              <p class="info-label">Service Area</p>
+              <p class="info-value">Greater Phoenix Metropolitan Area<br>Gilbert · Queen Creek · Chandler<br>Scottsdale · Cave Creek · &amp; Surrounding Areas</p>
+            </div>
+
+            <div class="info-row">
+              <p class="info-label">License</p>
+              <p class="info-value">Arizona ROC #360344<br>General Residential B<br>General Residential Contractor</p>
+            </div>
+
+            <div class="info-row">
+              <p class="info-label">Qualifying Party</p>
+              <p class="info-value">Matthew Edward Juris<br>
+                <span style="font-size:0.8rem; color:var(--gray-600);">General Contractor · ROC #360344</span><br>
+                <span style="font-size:0.8rem; color:var(--gray-600);">Licensee at: Realty ONE Group · License Number: SA634367000</span>
+              </p>
+            </div>
+
+            <div class="info-row">
+              <p class="info-label">Business Hours</p>
+              <p class="info-value">Monday – Friday<br>7:00 AM – 5:00 PM (AZ Time)</p>
+            </div>
+
+            <!-- INSERT MAP EMBED -->
+            <div class="media-ph" style="aspect-ratio:16/10; border-radius:8px; margin-top:32px;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Insert Google Maps Embed<br><span style="font-size:0.65rem; opacity:0.6;">Add your service area map here</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="stats-strip">
+    <div class="stats-grid stagger">
+      <div class="stat-item fade-in">
+        <div class="stat-number">ROC</div>
+        <div class="stat-label">#360344 Licensed</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">AZ</div>
+        <div class="stat-label">General Residential B</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Bonded &amp; Insured</div>
+      </div>
+      <div class="stat-item fade-in">
+        <div class="stat-number">1 Day</div>
+        <div class="stat-label">Avg. Response Time</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Prestige Build Co.</div>
+        <p class="footer-desc">Arizona's premier luxury residential contractor. Crafting bespoke homes with precision, integrity, and artistry.</p>
+        <p class="footer-roc">ROC #360344 · General Residential B · Licensed, Bonded &amp; Insured<br>Licensee at: Realty ONE Group · License Number: SA634367000</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="process.html">Builder Process</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Custom Homes</a></li>
+          <li><a href="services.html">Design-Build</a></li>
+          <li><a href="services.html">Home Additions</a></li>
+          <li><a href="services.html">Luxury Renovations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:6025737414">602-573-7414</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html">Schedule a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Prestige Build Co. All rights reserved.</span>
+      <span>ROC #360344 · General Residential B · State of Arizona</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
