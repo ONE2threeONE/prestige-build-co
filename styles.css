@@ -20,7 +20,7 @@
   --gray-300:     #c0c0c2;
   --gray-400:     #98989a;
   --gray-600:     #6e6e73;
-  --nav-h:        76px;
+  --nav-h:        88px;
   --max-w:        1200px;
   --font-serif:   'Playfair Display', Georgia, serif;
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -74,19 +74,53 @@ nav.scrolled {
 }
 
 .nav-logo {
-  font-family: var(--font-sans);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
-  background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), var(--gold), var(--gold-light), var(--gold-dark));
+  line-height: 1;
+}
+
+.nav-logo-icon {
+  height: 52px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nav-logo-main {
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), #fff, var(--gold-light), var(--gold), var(--gold-light), var(--gold-dark));
   background-size: 300% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: shimmer 6s linear infinite;
-  white-space: nowrap;
+  animation: shimmer 12s linear infinite;
+}
+
+.nav-logo-sub {
+  font-family: var(--font-sans);
+  font-size: 0.52rem;
+  font-weight: 500;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold-light), #fff, var(--gold-light), var(--gold-dark));
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 12s linear infinite;
+  animation-delay: 0.4s;
 }
 
 .nav-links {
