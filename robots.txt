@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://one2threeone.github.io/prestige-build-co/sitemap.xml
